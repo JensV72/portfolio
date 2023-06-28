@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn portfolio contacten</title>
+    <link rel="stylesheet" href="./css/contacten.css">
+</head>
+
+<body>
+    <nav>
+        <div id="foto">
+            <a target="_blank"
+                href="https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/creative-media-and-game-technologies/voltijd/">
+                <img alt="image of my newest shoes" src="./img/hogeschool-rotterdam-logo-png-transparent.png" />
+            </a>
+        </div>
+        <div id="legebalk"></div>
+
+        <div id="home">
+            <a href="index.html">
+                <img alt="image of home button" src="./img/home button.png" /></a>
+        </div>
+
+        <div id="portfolio">
+            <a href="portfolio.html">
+                <img alt="image of portfolio" src="./img/portfolio.png" /></a>
+        </div>
+
+        <div id="contact">
+            <a href="contact.html">
+                <img alt="image of contact" src="./img/contacten.png" /></a>
+        </div>
+    </nav>
+
+    <section id="socials">
+        <div>
+            <a target="_blank" href="https://www.instagram.com/jens.verhoeff/?hl=nl">
+                <img alt="image of instagram logo" src="./img/instagram logo.png"></a>
+        </div>
+        <div>
+            <a href="mailto:jens.verhoeff@gmail.com">
+                <img alt="image of email logo" src="./img/email logo.png">
+            </a>
+        </div>
+
+        <div id="telefoon" onclick="myFunction()">
+            <img alt="image of a phone logo" src="./img/telefoonlogo.png">
+            <div class="popuptext" id="myPopup">+31630882981</div>
+        </div>
+        <script>
+            function myFunction() {
+                let popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+        </script>
+    </section>
+
+    <section id="contactformulier">
+        <h2>Contact</h2>
+        <form action="bedankt.html">
+            <div class="formulier">
+                <label for="firstname">voonaam</label>
+                <input id="firstname" name="firstname" type="text" placeholder="typ hier je naam">
+            </div>
+
+            <div class="formulier">
+                <label for="lastname">Achternaam</label>
+                <input id="lastname" name="lastname" type="text" placeholder="typ hier je achternaam">
+            </div>
+
+            <div class="formulier">
+                <label for="email">E-mail</label>
+                <input id="ëmail" name="email" type="email" placeholder="typ hier je email adres" required>
+            </div>
+
+            <div class="formulier">
+                <label for="aanleiding">aanleiding</label>
+                <select name="aanleiding" id="aanleiding">
+                    <option disabled selected> Kies een optie</option>
+                    <option value="prive">Privé</option>
+                    <option value="websites">Websites</option>
+                    <option value="school">School</option>
+                </select>
+            </div>
+
+            <div class="formulier">
+                <label for="bericht">Bericht:</label>
+                <textarea id="bericht" name="bericht" rows="10" cols="45"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Versturen</button>
+            </div>
+
+        </form>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
